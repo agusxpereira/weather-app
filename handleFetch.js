@@ -2,7 +2,7 @@
 
 
 const getCity = async (city="Azul")=>{
-    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=39cd30a19c24497382b02052241303&q=${city}&aqi=no`, {mode:'cors'});
+    const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=39cd30a19c24497382b02052241303&q=${city}&aqi=no`, {mode:'cors'});
     const dataCity = await response.json();
 
     try{
